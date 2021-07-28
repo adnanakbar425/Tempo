@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/nav_menu_btn"
+            android:src="@drawable/ic_side_nav_white"
+            android:layout_width="@dimen/toolbar_icon_size"
+            android:layout_height="@dimen/toolbar_icon_size"/>
+
+        <ImageView
+            android:src="@drawable/ic_app_name_in_card"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/nav_menu_btn"
+            android:layout_toLeftOf="@+id/info_btn"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/toolbar_icon_size"/>
+
+        <ImageView
+            android:id="@+id/info_btn"
+            android:src="@drawable/ic_info_white"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/toolbar_icon_size"
+            android:layout_height="@dimen/toolbar_icon_size"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="@dimen/card_size">
+        <ImageView
+            android:id="@+id/icon_mode"
+            android:src="@drawable/ic_modes"
+            android:layout_width="@dimen/card_size"
+            android:layout_height="@dimen/card_size"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/ic_slide_background"
+            android:layout_toLeftOf="@+id/down_arrow"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/icon_mode"
+            android:layout_height="@dimen/card_size">
+
+            <TextView
+                android:text="Modes"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/down_arrow"
+            android:layout_width="@dimen/card_size"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:background="@drawable/ic_dark_card"
+            android:layout_height="@dimen/card_size">
+            <ImageView
+                android:src="@drawable/ic_arrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/card_size">
+        <ImageView
+            android:id="@+id/icon_history"
+            android:src="@drawable/ic_history"
+            android:layout_width="@dimen/card_size"
+            android:layout_height="@dimen/card_size"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/ic_slide_background"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/icon_history"
+            android:layout_height="@dimen/card_size">
+
+            <TextView
+                android:text="History"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/card_size">
+        <ImageView
+            android:id="@+id/icon_calander"
+            android:src="@drawable/ic_calander"
+            android:layout_width="@dimen/card_size"
+            android:layout_height="@dimen/card_size"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/ic_slide_background"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/icon_calander"
+            android:layout_height="@dimen/card_size">
+
+            <TextView
+                android:text="Calendar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/card_size">
+        <ImageView
+            android:id="@+id/icon_community"
+            android:src="@drawable/ic_community"
+            android:layout_width="@dimen/card_size"
+            android:layout_height="@dimen/card_size"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/ic_slide_background"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/icon_community"
+            android:layout_height="@dimen/card_size">
+
+            <TextView
+                android:text="Community"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
